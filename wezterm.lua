@@ -79,6 +79,17 @@ config.keys = {
 		mods = "CMD",
 		action = wezterm.action.CloseCurrentPane({ confirm = true }),
 	},
+	-- アクティブなペインを移動
+	{
+		key = "]",
+		mods = "CMD",
+		action = wezterm.action.ActivatePaneDirection("Next"),
+	},
+	{
+		key = "[",
+		mods = "CMD",
+		action = wezterm.action.ActivatePaneDirection("Prev"),
+	},
 	-- Enter, cmdでtoggle full screen
 	{
 		key = "Enter",
