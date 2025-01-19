@@ -79,6 +79,12 @@ config.keys = {
 		mods = "CMD",
 		action = wezterm.action.CloseCurrentPane({ confirm = true }),
 	},
+	-- Enter, cmdでtoggle full screen
+	{
+		key = "Enter",
+		mods = "CMD",
+		action = wezterm.action.ToggleFullScreen,
+	},
 }
 
 return config
