@@ -5,7 +5,15 @@ if wezterm.config_builder then
 	config = wezterm.config_builder()
 end
 
-config.font_size = 16.0
+config.line_height = 1.2
+config.font = wezterm.font_with_fallback({
+	"Ricty Diminished",
+	"Menlo",
+	"Monaco",
+	"Courier New",
+	"monospace",
+})
+config.font_size = 18.0
 config.use_ime = true
 config.window_background_opacity = 0.85
 config.macos_window_background_blur = 20
