@@ -7,6 +7,7 @@ echo Applying abbreviation current terminal session...
 abbr -S g='git' > /dev/null
 abbr -S gb='git branch' > /dev/null
 abbr -S gsw='git switch' > /dev/null
+abbr -S gsm="git switch $(git symbolic-ref refs/remotes/origin/HEAD | awk -F'/' '{print $NF}')" > /dev/null
 abbr -S gst='git status' > /dev/null
 abbr -S gco='git checkout' > /dev/null
 abbr -S gl='git log' > /dev/null
