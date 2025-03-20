@@ -18,3 +18,8 @@ abbr -S gpso='git push origin' > /dev/null
 abbr -S gpsc='git push origin $(git branch --show-current)' > /dev/null
 abbr -S gplo='git pull origin' > /dev/null
 abbr -S gplc='git pull origin $(git branch --show-current)' > /dev/null
+
+## editor
+
+abbr -S nv='nvim' > /dev/null
+abbr -S c='cursor .' > /dev/null
