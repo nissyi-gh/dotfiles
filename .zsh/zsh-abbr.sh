@@ -23,3 +23,7 @@ abbr -S gplc='git pull origin $(git branch --show-current)' > /dev/null
 
 abbr -S nv='nvim' > /dev/null
 abbr -S c='cursor .' > /dev/null
+
+## terminal
+
+abbr -S repo='cd $(ghq list -p | peco)' > /dev/null
