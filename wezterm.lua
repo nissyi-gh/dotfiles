@@ -6,13 +6,10 @@ if wezterm.config_builder then
 end
 
 config.line_height = 1.2
-config.font = wezterm.font_with_fallback({
-	"Ricty Diminished",
-	"Menlo",
-	"Monaco",
-	"Courier New",
-	"monospace",
-})
+config.font = wezterm.font_with_fallback {
+  'SF Mono',
+  'Hiragino Sans',
+}
 config.font_size = 18.0
 config.use_ime = true
 config.window_background_opacity = 0.85
