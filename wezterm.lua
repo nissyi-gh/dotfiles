@@ -10,7 +10,7 @@ config.font = wezterm.font_with_fallback {
   'SF Mono',
   'Hiragino Sans',
 }
-config.font_size = 18.0
+config.font_size = 14.0
 config.use_ime = true
 config.window_background_opacity = 0.85
 config.macos_window_background_blur = 20
