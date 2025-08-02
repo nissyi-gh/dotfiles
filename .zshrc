@@ -6,3 +6,4 @@ PROMPT='%F{cyan}%*%f %F{green}[%~]%f %# '
 source ~/.zsh/zsh-abbr.sh
 source ~/.zsh/path/rbenv.sh
 source ~/.zsh/original_functions/chps.sh
+source ~/.zsh/original_functions/display_adjust.sh
