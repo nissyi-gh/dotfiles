@@ -1,0 +1,72 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette
+{
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "vim_mode": true,
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "show_whitespaces": "trailing",
+  "remove_trailing_whitespace_on_save": true,
+  "ensure_final_newline_on_save": true,
+  "theme": "Catppuccin Macchiato",
+  "autosave": "on_focus_change",
+  "disable_ai": true,
+  "languages": {
+    "Ruby": {
+      "language_servers": ["ruby-lsp"]
+    }
+  },
+  "lsp": {
+    "ruby-lsp": {
+      "initialization_options": {
+        "enabledFeatures": {
+          "codeActions": true,
+          "codeLens": true,
+          "completion": true,
+          "definition": true,
+          "diagnostics": true,
+          "documentHighlights": true,
+          "documentLink": true,
+          "documentSymbols": true,
+          "foldingRanges": true,
+          "formatting": true,
+          "hover": true,
+          "inlayHint": true,
+          "onTypeFormatting": true,
+          "selectionRanges": true,
+          "semanticHighlighting": true,
+          "signatureHelp": true,
+          "typeHierarchy": true,
+          "workspaceSymbol": true
+        },
+        "featuresConfiguration": {
+          "inlayHint": {
+            "implicitHashValue": true,
+            "implicitRescue": true
+          }
+        },
+        "indexing": {
+          // "excludedPatterns": ["path/to/excluded/file.rb"],
+          // "includedPatterns": ["path/to/included/file.rb"],
+          "excludedGems": ["gem1", "gem2", "etc."],
+          "excludedMagicComments": ["compiled:true"]
+        },
+        "formatter": "auto",
+        "linters": [],
+        "experimentalFeaturesEnabled": false
+      }
+    }
+  },
+  "buffer_font_features": {
+    "calt": false // Disable ligatures
+  }
+}
